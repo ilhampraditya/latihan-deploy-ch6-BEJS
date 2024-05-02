@@ -1,0 +1,34 @@
+### register
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+    "name":"jojon",
+    "email":"jojon@mail.com",
+    "password":"password123"
+}
+
+### login
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+    "email":"ilham@mail.com",
+    "password":"password123"
+}
+
+### whoami
+GET http://localhost:3000/api/v1/whoami
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6ImlsaGFtIiwiZW1haWwiOiJpbGhhbUBtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxMzU0MDQyNX0.ccAmDoo8k6__dUC7JnMrU1cqsutWr6vNmJ_roiY0k5E
+# Authorization: toktntoktnttotkn
+
+### create new admin
+POST http://localhost:3000/api/v1/create-admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6ImlsaGFtIiwiZW1haWwiOiJpbGhhbUBtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxMzU0MDQyNX0.ccAmDoo8k6__dUC7JnMrU1cqsutWr6vNmJ_roiY0k5E
+
+{
+    "name":"rembo",
+    "email":"rembo@mail.com",
+    "password":"password123"
+}
